@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto DM</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__content animate">
+            <div class="hero__content__branding">
+                <img src="./dist/img//Assets/logo.png" alt="Logo Dungeon Meshi">
+            </div>
+            <p class="text--big">
+                Dungeon Meshi (Delicious in Dungeon) é uma série de mangá Seinen japonesa de comédia de fantasia escrita e ilustrada por Ryõko Kui.
+            </p>
+            <p class="text--big">
+                O mangá de Dungeon Meshi foi finalizado no dia 15 de setembro de 2023, no capítulo 97, da 107º edição da revista Harta
+            </p>
+            <p class="text--big">
+                A adaptação em anime de Dungeon Meshi está atualmente sendo produzida pelo estúdio Trigger e estreou no dia 4 de janeiro de 2024
+            </p>
+            <div class="hero__content__netflix">
+                <a href="#"><img src="./dist/img//Assets/Netflix_Symbol_RGB.png" alt="Netflix logo"></a>
+            </div>
+        </div>
+    </section>
+    <div class="sep"></div>
+    <div class="background">
+    <section class="plot">
+        <div class="plot__content">
+            <div class="plot__content__image animate">
+                <img src="./dist/img/Assets/Chapter_97.webp" alt="Banner Plot">
+            </div>
+            <div class="plot__content__plot">
+                <h3 class="title--big animate">Plot</h3>
+                <p class="text animate">
+                    Em um mundo de fantasia, guildas de aventureiros saem em expedições para adentrar masmorras. Acredita-se que em uma dessas masmorras, localizada em uma ilha, abriga em seus níveis mais profundos o misterioso Reino Dourado, muito cobiçado por exploradores. A história começa com uma missão fracassada, onde seis membros de uma equipe tentam enfrentar um dragão vermelho, mas acabam escapando
+                    ao custo de deixar para trás Falin, uma feiticeira humana, que teletransporta os outros membros do grupo para fora da masmorra antes de ser devorada pelo dragão. Após dois membros abandonarem o grupo, os membros restantes — Laios (um espadachim humano e irmão de Falin), Chilchuck (um ladino halfling) e Marcille (uma feiticeira élfica) — planejam em como voltar ao nível da masmorra onde enfrentaram
+                    o dragão a tempo de salvar Falin da digestão. Com a maioria de seus suprimentos deixados para trás, sua missão parece impossível - até que Laios, que possui uma forte obsessão por monstros, sugerir que eles se sustentem caçando criaturas e encontrando comida dentro da masmorra. Chilchuck e Marcille relutantemente concordam com o plano. No primeiro andar, o grupo se encontra com Senshi, um anão com anos
+                    de experiência de sobrevivência em meio aos monstros do calabouço. A história detalha suas viagens pelos diferentes níveis da masmorra, os ambientes, as armadilhas e monstros que encontram, e as refeições que preparam.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="sep2">
+        <img src="./dist/img/Assets/top-staffcast-illust.png" alt="">
+    </div>
+    <section class="chars">
+        <div class="chars__content">
+                <div class="chars__content__title">
+                    <h3 class="title--big">Personagens</h3>
+                </div>
+            <div class="chars__content__select">
+                <nav class="chars__content__select__nav">
+                    <ul>
+                        <li class="char" data-char-button="n1">
+                            <button>
+                                <img src="./dist/img/Characters/1n.png" class="fit">
+                            </button>
+                        </li>
+                        <li data-char-button="n2" class="n2 char">
+                            <button>
+                                <img src="./dist/img/Characters/2n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                        <li data-char-button="n3" class="n3 char">
+                            <button>
+                                <img src="./dist/img/Characters/3n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                        <li data-char-button="n4" class="n4 char">
+                            <button>
+                                <img src="./dist/img/Characters/4n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                        <li data-char-button="n5" class="n5 char">
+                            <button>
+                                <img src="./dist/img/Characters/14n.png" class="fit" alt="">
+                            </button>
+                        </li>
+
+                        <li class="sep"></li>
+
+                        <li data-char-button="n6" class="n6 char char__small">
+                            <button>
+                                <img src="./dist/img/Characters/6n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                        <li data-char-button="n7" class="n7 char char__small">
+                            <button>
+                                <img src="./dist/img/Characters/7n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                        <li data-char-button="n8" class="n8 char char__small">
+                            <button>
+                                <img src="./dist/img/Characters/5n.png" class="fit" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Laios-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n1">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/1c.png" alt="Laios full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Laios Touden</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Um excelente guerreiro com uma riqueza de conhecimentos sobre monstros e sobre a masmorra. <br>
+                                Um líder confiável. Tem um grande interesse em monstros e possui um insaciável espirito inquisitvo, que chama a atenção daqueles ao seu redor. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/1f.png" alt="Laios profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marcille-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n2">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/2c.png" alt="Marcille full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Marcille</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Uma elfa hábil com um grande conhecimento em magia, que presta suporte e poder explosivo para seus companheiros. <br>
+                                Possui uma personalidade séria e normalmente um pensamento lógico sobre a situação, guiando seu grupo e procurando soluções a obstáculos em seu caminho. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/2f.png" alt="Marcille profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Chilchuck-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n3">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/3c.png" alt="Chilchuck full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Chilchuck</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Um pequenino agilidoso que tem um ótimo ouvido para armadilhas e com a habilidade de desarmá-las <br>
+                                Com um pensamento cínico e bem crítico, constantemente cauteloso para qualquer armadilha que possa encontrar, sempre preparado para ajudar seu grupo em caso de armadilhas.<br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/3f.png" alt="Chilchuck profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Senshi-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n4">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/4c.png" alt="Senshi full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Senshi</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Um anão com um conhecimento incrível sobre culinária. <br>
+                                Um líder confiável. Tem um grande interesse em monstros e possui um insaciável espirito inquisitvo, que chama a atenção daqueles ao seu redor. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/4f.png" alt="Senshi profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Itzumi-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n5">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/14c.png" alt="Itzumi full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Itzumi</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Uma ladina meio fera com orelhas e rabo de gato. <br>
+                                Possui um espirito livre que falta cooperação com o resto da equipe, porém, é muito habilidosa em combates. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/14f.png" alt="Itzumi profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Namari-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n6">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/6c.png" alt="Namari full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Namari</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Uma anã ferreira que decidiu sair da equipe. <br>
+                                Com um personalidade mais séria e com uma olho para tipos de ferros e qualidade de armas, muito capaz em forjar e cuidar de armas e ferramentas.<br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/6f.png" alt="Laios profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Shuro-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n7">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/7c.png" alt="Shuro full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Shuro</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Um samurai de uma terra distante que decidiu sair da equipe. <br>
+                                Muito sério e com um grande senso de responsabilidade, muito habilidoso em combate. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/7f.png" alt="Shuro profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Falin-->
+            <div class="chars__content__data">
+                <div class="chars__content__data__select" data-char-id="n8">
+                    <div class="chars__content__data__select__img">
+                        <img id="char__img" src="./dist/img/Characters/5c.png" alt="Falin full body">
+                    </div>
+                    <div class="chars__content__data__prof">
+                        <div class="prof-name">
+                            <h1 class="title">Falin Touden</h1>
+                        </div>
+                        <div class="prof-text">
+                            <p class="text">
+                                Uma sacerdote que possui poderes incríveis de cura e magias de combate. <br>
+                                Irmã de Laios, sempre foi muito carinhosa e cuidadosa com a equipe, curando qualquer ferimento que fosse causado em seu irmão ou qualquer um seus companheiros. <br>
+                            </p>
+                        </div>
+                        <div class="prof-face">
+                            <img src="./dist/img/Characters/5f.png" alt="Falin profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    </div>
+    <div class="sep3"></div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__copyright">
+                <div class="footer__content__copyright__me">
+                    <p class="text--big">
+                        Site feito por João Gustavo para o Curso EBAC 2024
+                    </p>
+                    <a href="https://github.com/JoaoMoreiraLuz">
+                        <img src="./dist/img/Assets/github.png" alt="Github logo">
+                    </a>
+                </div>
+                <p class="text">©九井諒子・KADOKAWA刊／「ダンジョン飯」製作委員会</p>
+            </div>
+            <div class="footer__content__x">
+                <a href="https://twitter.com/dun_meshi_anime">
+                    <img src="./dist/img/Assets/footer-x.webp" alt="Logo X">
+                </a>
+            </div>
+            <div class="footer__content__trigger">
+                <a href="https://www.st-trigger.co.jp">
+                    <img src="./dist/img/Assets/banner-trigger.png" alt="Banner Trigger">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@use 'var';
+
+@keyframes anim {
+    from {opacity: 0; transform: translate3d(0, 2em, 0);}
+    to {opacity: 1; transform: none;}
+}
+
+.plot {
+    padding: 5.6vw;
+    text-align: center;
+    
+    &__content {
+        padding-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &__plot {
+            p {
+
+                @media (max-width: 768px) {
+                    padding-bottom: 30px;
+                }
+                &.in-view {
+                    animation: anim 1.5s .2s ease-out both running;
+                }
+            }
+            h3 {
+                &.in-view {
+                    animation: anim 0.4s .2s ease-out both running;
+                }
+            }
+        }
+
+        &__image {
+            &.in-view {
+                animation: anim 0.4s .2s ease-out both running;
+            }
+            img {
+            max-width: 80%;
+            }
+        }
+    }
+
+    .title--big {
+        margin-bottom: 64px;
+        border-bottom: 3px solid var.$textColorPri;
+    }
+}

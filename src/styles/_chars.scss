@@ -1,0 +1,216 @@
+@use 'var';
+
+@keyframes anim {
+    from {opacity: 0; transform: translate3d(0, 2em, 0);}
+    to {opacity: 1; transform: none;}
+}
+
+.chars {
+    background-color: rgb(250, 242, 238);
+
+    &__content {
+        padding-bottom: 9vw;
+
+        h3 {
+            padding-bottom: 40px;
+            text-align: center;
+            color: var.$textColorSec;
+        }
+
+        &__select__nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+
+                    display: list-item;
+                    text-align: -webkit-match-parent;
+                    unicode-bidi: isolate;
+
+                    &.char {
+                        width: calc(345 / 3000* 100vw* .6);
+                        display: block;
+                        margin: 0;
+                        padding: .5em;
+
+                        @media (max-width: 768px) {
+                            max-width: 180px;
+                            width: 95px;
+                        }
+
+                        &:hover {
+                            width: calc(345 / 3000* 100vw* .7);
+
+                            @media (max-width: 768px) {
+                                width: 95px;
+                            }
+                        }
+
+                        &.crt {
+                            button {
+                                border: none;
+                                display: block;
+                                position: relative;
+                                transform-origin: center center;
+                                pointer-events: all;
+                                cursor: pointer;
+                                line-height: 0;
+                                background: url(../img/Assets/top-character-n-on.png) no-repeat center center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &__small {
+                            display: block;
+                            margin: 0;
+                            padding: .25em;
+
+                            @media (max-width: 768px) {
+                                display: block;
+                                margin: 0;
+                                padding: .5em;
+                            }
+                        }
+                    }
+                    
+                    &.sep {
+                        width: 100%;
+                        height: 1px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    button {
+                        border: none;
+                        display: block;
+                        position: relative;
+                        transform-origin: center center;
+                        pointer-events: all;
+                        cursor: pointer;
+                        line-height: 0;
+                        background: url(../img/Assets/top-character-n-off.png) no-repeat center center;
+                        background-size: contain;
+
+                        img {
+                            &.fit {
+                                width: 100%;
+                                max-width: inherit;
+                                height: inherit;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__data {
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            color: var.$textColorSec;
+
+            &__select {
+                padding-top: 50px;
+                width: 100%;
+                min-height: calc(1720 / 3000* 100vw + 0cm);
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+                pointer-events: none;
+                display: none;
+                
+                &--crt {
+                    display: flex;
+                    animation: anim 0.4s .2s ease-out both running;
+                    
+                    @media (max-width: 768px) {
+                        display: block;
+                    }
+                }
+
+                &__img {
+                    position: relative;
+                    width: calc(900 / 3000* 100vw);
+
+                    img {
+                        width: 100%;
+
+                        @media (max-width: 768px) {
+                            width: 380px;
+                        }
+                    }
+                }
+            }
+
+            &__prof {
+                position: relative;
+                width: calc(1160 / 3000* 100vw);
+
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    padding: 5vw;
+                }
+            }
+        }
+    }
+}
+
+
+.s {
+    width: calc(345 / 3000* 100vw* 0.6);
+    display: block;
+    margin: 0;
+    padding: .25em;
+}
+
+
+.prof-name {
+    padding: 5em 0 0 0;
+    margin: 0 0 1.5em 0;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h1 {
+        display: block;
+        margin-right: .5em;
+        font-weight: bold;
+        color: var.$textColorSec;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+.prof-text {
+    padding: 0;
+    margin-bottom: 1em;
+
+    p {
+        margin: 0;
+        font-size: 1.3em;
+        letter-spacing: .025em;
+        line-height: 2;
+        margin-bottom: 1em;
+        color: var.$textColorSec;
+    }
+}
+
+.prof-face {
+    width: 100%;
+    
+    img {
+        width: 100%;
+    }
+}
